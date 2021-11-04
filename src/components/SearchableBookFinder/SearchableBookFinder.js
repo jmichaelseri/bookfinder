@@ -36,6 +36,24 @@ const SearchableBookFinder = (props) => {
         setSearchTerm(inputRef.current.value)
         inputRef.current.value = ''
     }
+
+    if(!isIterable(bookData)){
+        return <ErrorPage />
+    } else {
+        for (let book of bookData){
+            if(book.volumeInfo.title.length > 30){
+                let title = book.volumeInfo.title
+                let cutOffPart = title.slice(30)
+                title = title.replace(cutOffPart, '...')
+                book.volumeInfo.title = title
+            }
+        }
+    }
+
+    if (error || !Array.isArray(bookData) || bookData.length === 0) {
+        return <ErrorPage />
+      }
+
     return (
         <div>
             <Header />
