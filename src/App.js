@@ -1,8 +1,10 @@
+import SearchableBookFinder from "./components/SearchableBookFinder/SearchableBookFinder";
+
 
 function App() {
   return (
-    <div>
-     
+    <div className="bg-gray-100">
+      <SearchableBookFinder />
     </div>
   );
 }
