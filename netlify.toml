@@ -1,0 +1,3 @@
+[build]
+    functions = "netlfiy/functions"
+    publish = "public"

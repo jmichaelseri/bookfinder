@@ -15,8 +15,7 @@ const SearchableBookFinder = (props) => {
     
 
     useEffect(() => {
-        const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&key=${process.env.REACT_APP_API_KEY}`
-        axios.get(apiUrl)
+        axios.get(`/.netlify/functions/fetchBookData?q=${searchTerm}`)
             .then((response) => {
                 setIsLoading(false)
                 setBookData(response.data.items)
