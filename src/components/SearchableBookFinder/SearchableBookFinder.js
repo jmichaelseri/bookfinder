@@ -15,7 +15,7 @@ const SearchableBookFinder = (props) => {
     
 
     useEffect(() => {
-        axios.get(`/.netlify/functions/fetchBookData?q=${searchTerm}`)
+        axios.get(`/.netlify/functions/fetchBookData?${searchTerm}`)
             .then((response) => {
                 setIsLoading(false)
                 setBookData(response.data.items)
