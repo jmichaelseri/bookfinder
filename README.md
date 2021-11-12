@@ -4,6 +4,10 @@
 
 This app was created for the chinghu voyage solo project submission with the [Google Books API](https://developers.google.com/books)
 
+## ScreenShot
+
+![Bookfinder](/assets/images/bookfinder.png)
+
 Live Link: [BookFinder](https://jmichaelseri-bookfinder.netlify.app/)
 
 ## Features
