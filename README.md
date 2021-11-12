@@ -6,7 +6,7 @@ This app was created for the chinghu voyage solo project submission with the [Go
 
 ## ScreenShot
 
-![Bookfinder](/assets/images/bookfinder.png)
+![Bookfinder](src/assets/images/bookfinder.png)
 
 Live Link: [BookFinder](https://jmichaelseri-bookfinder.netlify.app/)
 
